@@ -9,4 +9,11 @@
     </parent>
 
     <artifactId>spacetime-protocol</artifactId>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.otaboqq</groupId>
+            <artifactId>spacetime-utils</artifactId>
+        </dependency>
+    </dependencies>
 </project>

@@ -22,9 +22,40 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>com.otaboqq</groupId>
+                <artifactId>spacetime-server</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.otaboqq</groupId>
+                <artifactId>spacetime-protocol</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.otaboqq</groupId>
+                <artifactId>spacetime-sql</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.otaboqq</groupId>
+                <artifactId>spacetime-utils</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.netty</groupId>
+                <artifactId>netty-all</artifactId>
+                <version>4.1.45.Final</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
     <modules>
         <module>spacetime-protocol</module>
         <module>spacetime-server</module>
         <module>spacetime-sql</module>
+        <module>spacetime-utils</module>
     </modules>
 </project>
